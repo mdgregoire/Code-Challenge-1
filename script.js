@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   var clicks = 0;
   $('#generateButton').on('click', function(){
-    console.log('inclick');
     clicks +=1;
     $('body').append('<div class=red><p>'+ clicks +"</p><button class='swapButton'>Swap</button><button class='deleteButton'>Delete</button></div>");
   });//end generateButton
@@ -17,7 +16,6 @@ $(document).ready(function(){
     }//end yellow check
   });//end on clickSwap
   $('body').on('click', '.deleteButton',function(){
-    console.log('indeleteclick');
       $(this).parent().hide();
   });//end deleteButton
 });//end on ready
